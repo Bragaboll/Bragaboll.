@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<tml lang="ptBR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>País de Nascimento</title>
+    </head>
+    <body>
+        <h1>País de Origem</h1>
+    
+        Nascido em<input type="text" name="txtpais" id="txtpais">
+        <input type="button" value="Verificar" onclick="Verificar()">
+          
+    
+        <div id= 'res'>
+         Resultado:
+         
+    </div>
+    <script>
+
+        function Verificar() {
+        var p = window.document.getElementById('txtpais')
+        var res = window.document.getElementById('res')
+        
+        
+        if (p.value == 'Brasil') {
+            res.innerText = 'Voce é Brasileiro'
+        }
+        else { res.innerText = 'Voce é estrangeiro'       }
+        }
+                  
+    </script>
+            
+        
+    </body>
+    </html>
